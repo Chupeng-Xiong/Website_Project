@@ -1,6 +1,11 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(35, 35, 35) !important;
+    color: white !important;
 }

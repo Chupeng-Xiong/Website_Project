@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 16px 32px 16px 32px;
     height: 60px;
-    background: rgb(0, 132, 180);
+    background:  rgb(67, 66, 66);
     border-bottom: 5px solid #000000;
     position: sticky;
     top: 0;
@@ -14,7 +14,7 @@
 .navbar-logo {
     font-size: 18px;
     font-weight: 600;
-    color: #111;
+    color: white;
 }
 
 .navbar-links {
@@ -25,7 +25,7 @@
 .navbar-links a {
     text-decoration: none;
     font-size: 14px;
-    color: #000000;
+    color: white;
     padding: 6px 12px;
     border-radius: 6px;
     transition: background 0.15s, color 0.15s;
@@ -37,6 +37,6 @@
 }
 
 .navbar-links a.active {
-    background: #0008ff;
-    color: white;
+    background: #959595;
+    color: black;
 }

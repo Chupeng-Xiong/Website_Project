@@ -1,0 +1,75 @@
+.education {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.page-header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.schools {
+    border-radius: 16px;
+    border: 2px solid #6e6e6e;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.school_body {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.school_image {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.school_img_container {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school_title {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.school_date {
+    position: absolute;
+    color: rgb(167, 167, 167) !important;
+    top: 16px;
+    right: 16px;
+}
+
+.school_location {
+    position: absolute;
+    color: rgb(167, 167, 167) !important;
+    top: 36px;
+    right: 16px;
+}
+
+.courses_header {
+    font-weight: 600;
+}
+
+.school_course {
+    color: rgb(167, 167, 167) !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    border: 2px solid #20aaff;
+}

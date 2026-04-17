@@ -1,15 +1,19 @@
 import { Card, Badge, Button, Row, Col } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import books from '../assets/Home/books.png'
+import experience from '../assets/Home/Experience.png'
+import interests from '../assets/Home/interests.png'
+import contacts from '../assets/Home/contacts.png'
 import '../styles/Home.css'
 
 export default function Home() {
     const navigate = useNavigate()
 
     const sections = [
-        { title: 'Education', description: 'My academic journey at UW–Madison and study abroad experiences.', path: '/education', badge: 'Interactive Map' },
-        { title: 'Experience', description: 'My work history and coding experience', path: '/experience', badge: 'Timeline' },
-        { title: 'Interests', description: 'Reading, Gunpla, and other hobbies.', path: '/interests', badge: 'Interactive' },
-        { title: 'Contact', description: 'Get in touch with me.', path: '/contact', badge: 'Links' },
+        { title: 'Education', description: 'My academic journey at UW–Madison and study abroad experiences.', path: '/education', badge: 'Degree & Study Abroad', img: books },
+        { title: 'Experience', description: 'My work history and coding experience', path: '/experience', badge: 'Timeline', img: experience },
+        { title: 'Interests', description: 'Reading, Gunpla, and other hobbies.', path: '/interests', badge: 'Interactive', img: interests },
+        { title: 'Contact', description: 'Get in touch with me.', path: '/contact', badge: 'Links', img: contacts },
     ]
 
     return (
@@ -22,7 +26,7 @@ export default function Home() {
                     </div>
                     <div className='profile-info'>
                         <Card.Title className='profile-title'>Chupeng Xiong</Card.Title>
-                        <Card.Text className='profile-text'>CS student at The University of Madison-Wisconsin</Card.Text>
+                        <Card.Text className='profile-text'>Computer Science student at The University of Madison-Wisconsin</Card.Text>
                         <div className='profile-links'>
                             <Button className='profile-btn' href='https://github.com/Chupeng-Xiong'>GitHub</Button>
                             <Button className='profile-btn' href='mailto:chupengxiong@gmail.com'>Email</Button>
@@ -36,10 +40,15 @@ export default function Home() {
                 {sections.map((section) => (
                     <Col key={section.title} xs={12} sm={6} md={6} lg={3}>
                         <Card className='section-card' onClick={() => navigate(section.path)}>
-                            <Card.Body>
-                                <Card.Title>{section.title}</Card.Title>
-                                <Card.Text>{section.description}</Card.Text>
-                                <Badge bg='dark'>{section.badge}</Badge>
+                            <Card.Body className='section-body'>
+                                <div className='image_container'>
+                                    <img src={section.img} alt={section.title} className='section_image'/>
+                                </div>
+                                <div>
+                                    <Card.Title>{section.title}</Card.Title>
+                                    <Card.Text>{section.description}</Card.Text>
+                                    <Badge bg='dark'>{section.badge}</Badge>
+                                </div>
                             </Card.Body>
                         </Card>
                     </Col>

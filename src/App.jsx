@@ -5,6 +5,7 @@ import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Interests from './pages/Interests'
 import Contact from './pages/Contact'
+import Waseda from './pages/Waseda'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/interests" element={<Interests />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/waseda' element={<Waseda />} />
       </Routes>
     </>
   )

@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react'
 import { DndContext, useDraggable, useDroppable } from '@dnd-kit/core'
-import headImg from '../assets/head.png'
-import torsoImg from '../assets/torso.png'
-import leftArmImg from '../assets/leftArm.png'
-import rightArmImg from '../assets/rightArm.png'
-import leftLegImg from '../assets/leftLeg.png'
-import rightLegImg from '../assets/rightLeg.png'
+import headImg from '../assets/Gundam/head.png'
+import torsoImg from '../assets/Gundam/torso.png'
+import leftArmImg from '../assets/Gundam/leftArm.png'
+import rightArmImg from '../assets/Gundam/rightArm.png'
+import leftLegImg from '../assets/Gundam/leftLeg.png'
+import rightLegImg from '../assets/Gundam/rightLeg.png'
 import '../styles/GundamBuilder.css'
 
 const SNAP_DISTANCE = 60

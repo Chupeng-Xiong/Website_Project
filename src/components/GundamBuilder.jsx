@@ -19,12 +19,12 @@ const TORSO_OFFSETS = {
 }
 
 const getInitialPositions = () => ({
-    torso:    { x: Math.random() * 600, y: Math.random() * 500 },
-    head:     { x: Math.random() * 600, y: Math.random() * 500 },
-    leftArm:  { x: Math.random() * 600, y: Math.random() * 500 },
-    rightArm: { x: Math.random() * 600, y: Math.random() * 500 },
-    leftLeg:  { x: Math.random() * 600, y: Math.random() * 500 },
-    rightLeg: { x: Math.random() * 600, y: Math.random() * 500 },
+    torso:    { x: Math.random() * 1200, y: Math.random() * 500 },
+    head:     { x: Math.random() * 1200, y: Math.random() * 500 },
+    leftArm:  { x: Math.random() * 1200, y: Math.random() * 500 },
+    rightArm: { x: Math.random() * 1200, y: Math.random() * 500 },
+    leftLeg:  { x: Math.random() * 1200, y: Math.random() * 500 },
+    rightLeg: { x: Math.random() * 1200, y: Math.random() * 500 },
 })
 
 const PARTS = [

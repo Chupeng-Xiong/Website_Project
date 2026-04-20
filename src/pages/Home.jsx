@@ -4,6 +4,7 @@ import books from '../assets/Home/books.png'
 import experience from '../assets/Home/Experience.png'
 import interests from '../assets/Home/interests.png'
 import contacts from '../assets/Home/contacts.png'
+import profileImg from '../assets/Home/profile.png'
 import '../styles/Home.css'
 
 export default function Home() {
@@ -21,8 +22,8 @@ export default function Home() {
             <h2 className='page-section'>PROFILE</h2>
             <Card className='profile'>
                 <Card.Body className='profile-body'>
-                    <div className='profile-img'>
-                        CX
+                    <div className='profile-img-container'>
+                        <img src={profileImg} alt='profile image' className='profile-img'/>
                     </div>
                     <div className='profile-info'>
                         <Card.Title className='profile-title'>Chupeng Xiong</Card.Title>

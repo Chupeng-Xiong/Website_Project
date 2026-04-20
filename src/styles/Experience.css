@@ -1,4 +1,114 @@
 .card {
     color: white !important;
     background-color: rgb(50, 50, 50) !important;
+    margin-left: 32px;
+    margin-right: 32px;
+    overflow: visible !important;
+}
+
+.page-section {
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 32px;
+}
+
+.job {
+    border-radius: 16px;
+    border: 2px solid #6e6e6e;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.job-body {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+
+.job-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.job-title {
+    font-size: 34px !important;
+    font-weight: 600;
+}
+
+.job-time {
+    position: absolute;
+    color: rgb(167, 167, 167) !important;
+    top: 16px;
+    right: 16px;
+}
+
+.job-location {
+    position: absolute;
+    color: rgb(167, 167, 167) !important;
+    top: 36px;
+    right: 16px;
+}
+
+.job-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.job-img-container {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-gap {
+    text-align: center;
+    font-size: 48px !important;
+    font-weight: 600 !important;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #6e6e6e;
+    margin: 32px;
+}
+
+.carousel {
+    margin-bottom: 32px;
+}
+
+.caro-card {
+    margin: 0 64px;
+    border-radius: 16px;
+    border: 2px solid #6e6e6e;
+    text-align: center;
+}
+
+.caro-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 32px;
+}
+
+.caro-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.caro-title {
+    font-size: 24px;
+    font-weight: 600;
 }
